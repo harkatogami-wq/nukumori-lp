@@ -70,10 +70,7 @@ header{
 }
 .brand{ display:flex; align-items:center; gap:8px; font-weight:700; font-size:15px; }
 .brand .mark{
-  width:32px; height:32px; border-radius:50%;
-  background:linear-gradient(135deg, #f2a6a0, #f4c95d);
-  display:flex; align-items:center; justify-content:center;
-  font-size:16px;
+  width:34px; height:34px; object-fit:contain; flex:none;
 }
 .nav-cta{
   background:var(--red); color:var(--badge-fg);
@@ -136,6 +133,20 @@ section{ padding:52px 0; }
   margin-bottom:8px; text-transform:uppercase;
 }
 .section-lead{ text-align:center; color:var(--brown-soft); font-size:14px; margin:0 0 32px; }
+.section-title .sparkle{
+  display:inline-block; width:22px; height:22px; object-fit:contain;
+  vertical-align:middle; margin:0 6px 6px;
+}
+:root[data-theme="dark"] .section-title .sparkle,
+:root:not([data-theme="light"]) .section-title .sparkle{ filter:none; }
+
+.section-title-row{
+  display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+  margin-bottom:24px;
+}
+.section-title-row .section-illust{
+  flex:none; width:104px; height:104px; object-fit:contain;
+}
 
 /* pain points */
 .pain-grid{
@@ -211,6 +222,7 @@ section{ padding:52px 0; }
   flex:none; background:var(--cream-deep); color:var(--brown-soft);
   font-size:12px; font-weight:700; padding:5px 12px; border-radius:99px;
 }
+.flow-item .flow-icon{ flex:none; width:36px; height:36px; object-fit:contain; }
 .flow-note{ text-align:center; font-size:12px; color:var(--brown-faint); margin-bottom:24px; }
 .flow-summary{
   text-align:center; font-size:17px; font-weight:800; color:var(--brown);
@@ -223,8 +235,12 @@ section{ padding:52px 0; }
   background:var(--paper); border:1px solid var(--line); border-radius:18px;
   padding:22px; text-align:center;
 }
-.tokuten-card .ico{ font-size:28px; margin-bottom:8px; }
+.tokuten-card .ico-illust{ width:88px; height:auto; object-fit:contain; margin:0 auto 12px; }
 .tokuten-card strong{ display:block; font-size:16px; }
+
+.scroll-arrow{
+  display:block; width:120px; margin:32px auto 0; object-fit:contain; opacity:.8;
+}
 
 /* overview table */
 .overview-table{
