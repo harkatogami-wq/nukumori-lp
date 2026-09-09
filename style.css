@@ -275,7 +275,8 @@ section{ padding:52px 0; }
   background:var(--paper); border:1px solid var(--line); border-radius:20px;
   padding:28px 24px; text-align:center; margin-bottom:22px;
 }
-.message-quote p{ margin:0; font-size:16px; font-weight:700; line-height:1.9; }
+.message-quote p{ margin:0; font-size:15px; font-weight:500; line-height:2; }
+.message-quote .highlight{ color:var(--red); font-weight:800; }
 .signature{
   display:flex; align-items:center; justify-content:center; gap:14px;
 }
@@ -314,6 +315,7 @@ section{ padding:52px 0; }
 /* final cta */
 .final-cta{ text-align:center; }
 .final-cta h2{ font-size:22px; font-weight:800; margin:0 0 10px; }
+.final-cta > p:first-child{ font-size:19px; font-weight:800; color:var(--brown); margin:0 0 22px; }
 .final-cta p{ font-size:14px; color:var(--brown-soft); margin:0 0 22px; }
 
 /* sticky bottom cta */
