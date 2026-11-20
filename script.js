@@ -29,7 +29,7 @@ document.querySelectorAll("[data-event]").forEach((el) => {
 const LINKS = {
   apply: "https://utage-system.com/p/RJt07qh92MBC", // お申込みフォーム（UTAGE）
   instagram: "https://www.instagram.com/haruka_hagukumi_touch?igsh=ajV5ZXkzajBydjhz&igsi=ajV5ZXkzajBydjhz&utm_source=qr",
-  line: "https://utage-system.com/line/open/xe5Fn3q5YbF2?mtid=WSvCfRkiXhnn", // Lien公式LINE
+  line: "https://line-harness-haruka.harka-togami.workers.dev/r/h-lien", // Lien公式LINE
   lienHp: "https://lien-hp-5qp.pages.dev",
   mayuminchiHp: "https://mayuminchi-hp.pages.dev",
 };
