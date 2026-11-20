@@ -1,11 +1,11 @@
 // ===== 開催情報（次回のイベントが決まったら、ここだけ書き換えればOK） =====
 const EVENT = {
   session: "第2回",
-  sessionLabel: "第2回 開催",
-  dateShort: "9/28",
-  dateLabel: "9月28日（月）10:00〜11:30",
-  dateLabelFull: "9月28日（月）10:00〜11:30",
-  time: "10:00〜11:30",
+  sessionLabel: "次回 開催",
+  dateShort: "日程調整中",
+  dateLabel: "日程調整中（決まりしだいLINEでお知らせします）",
+  dateLabelFull: "日程調整中（決まりしだいLINEでお知らせします）",
+  time: "決まりしだいお知らせします",
   venue: "まゆみんち",
   venueNote: "さいたま新都心駅 徒歩15分",
   target: "0歳〜あんよ期の赤ちゃんとママ",
@@ -27,7 +27,7 @@ document.querySelectorAll("[data-event]").forEach((el) => {
 
 // ===== 申込み導線リンク設定 =====
 const LINKS = {
-  apply: "https://utage-system.com/p/RJt07qh92MBC", // お申込みフォーム（UTAGE）
+  apply: "https://line-harness-haruka.harka-togami.workers.dev/r/h-nukumori", // 次回のお知らせ（LINEハーネス）。日程が決まったら予約 57bd50f2… に枠を足して ?page=event&id= を付ける
   instagram: "https://www.instagram.com/haruka_hagukumi_touch?igsh=ajV5ZXkzajBydjhz&igsi=ajV5ZXkzajBydjhz&utm_source=qr",
   line: "https://line-harness-haruka.harka-togami.workers.dev/r/h-lien", // Lien公式LINE
   lienHp: "https://lien-hp-5qp.pages.dev",
